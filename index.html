@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bootstrap - cards</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <style>
+
+        .container {
+            background-color: black;
+        }
+
+        .container h2 {
+            font-size: 48px;
+        }
+
+        .container h1 {
+            font-size: 65px;
+            color: white;
+            padding-left: 30px;
+            padding-bottom: 40px;
+            padding-top: 40px;
+        }
+
+        .loja {
+            display: grid;
+            grid-template-columns: 35.0% 35.0% 35.0%;
+        }
+
+        @media screen  and (max-width:767px) {
+            .container {
+            background-color: black;
+        }
+
+        .container h2 {
+            font-size: 48px;
+        }
+
+        .container h1 {
+            font-size: 65px;
+            color: white;
+            padding-left: 30px;
+            padding-bottom: 60px;
+            padding-top: 40px;
+        }
+
+        .loja {
+            display: block;
+            padding-left: 100px;
+            margin-top: 50px;
+        }
+
+        .loja img {
+            padding: 8px;
+        }
+    }
+
+
+    @media screen and (min-width: 768px) {
+    .loja {
+        display: grid;
+        grid-template-columns: 50.0% 50.0%;
+        padding-left: 130px;
+    }
+
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="carousel-teste" class="carousel carousel-fade sline"  data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="3000" class="carousel-item active">
+                    <img class="d-block w-100" src="https://32be822cfb.cbaul-cdnwnd.com/533af0b8772d6d44c11d6f5b521dd16e/200000000-8e80f8e811/will1.jpg?ph=32be822cfb"/>
+                <div class="carousel-caption">
+                    <h2>Motivação</h2>
+                </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="https://png.pngtree.com/background/20230618/original/pngtree-fitness-gym-s-3d-renderings-of-treadmills-or-running-machines-picture-image_3751253.jpg"/>
+                    <div class="carousel-caption">
+                        <h2>Força</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="https://img.freepik.com/fotos-premium/mulher-fitness-fazendo-agachamento-com-barra-um-dos-melhores-exercicios-de-musculacao-para-pernas_600776-7562.jpg"/>
+                    <div class="carousel-caption">
+                        <h2>Conquista</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button data-bs-target="#carousel-teste" data-bs-slide="prev" class="carousel-control-prev" type="button">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button data-bs-target="#carousel-teste" data-bs-slide="next" class="carousel-control-next" type="button">
+         <span class="carousel-control-next-icon"></span>   
+        </button>
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel-teste" class="active" data-bs-slide-to="0"></button>
+            <button type="button" data-bs-target="#carousel-teste" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carousel-teste" data-bs-slide-to="2"></button>
+        </div>
+            <h1>TheShape.</h1>
+        <div class="loja">
+            <div class="row">
+                <div class="col-8">
+                    <article class="card text-bg-dark">
+                        <header class="card-header">
+                            Linha Exclusiva!
+                        </header>
+                        <img src="https://cdn.awsli.com.br/800x800/1953/1953713/produto/233133830/timthumb--1--s9c2r3gvum.jpg"/>
+                   <div class="card-body">
+                    <h4 class="card-title">Termogênico</h4>
+                    <h5 class="card-subtitle">19,99$</h5>
+                    <p class="card-text">
+                        atua acelerando o metabolismo, proporcionando mais energia e, consequentemente, colaborando no emagrecimento.
+                    </p>
+                    <a href="#" class="btn btn-primary">Comprar</a>
+                   </div>
+                    </article>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-8">
+                    <div class="card text-bg-dark">
+                        <div class="card-header">
+                            Linha Exclusiva!
+                        </div>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnMuda2pWlqMw-WqHCxZ0sbP3aGS36CBlqvA&usqp=CAU"/>
+                   <div class="card-body">
+                    <h4 class="card-title">Creatina</h4>
+                    <h5 class="card-subtitle">29,99$</h5>
+                    <p class="card-text">
+                    Nutriente responsável pela geração de energia que serve às células musculares. 
+                    </p>
+                    <a href="#" class="btn btn-primary">Compre</a>
+                   </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-8">
+                    <div class="card text-bg-dark">
+                        <div class="card-header">
+                            Linha Exclusiva!
+                        </div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSusp8u1t7GbEJLoIuIvx_kcn3fe_IbFZ3wSw&usqp=CAU"/>
+                   <div class="card-body">
+                    <h4 class="card-title">Whey 100</h4>
+                    <h5 class="card-subtitle">59,99$</h5>
+                    <p class="card-text">
+                    Além das proteínas e dos aminoácidos, tem alta concentração de cálcio, trazendo benefícios para a saúde óssea do corpo. 
+                    </p>
+                    <a href="#" class="btn btn-primary">Comprar</a>
+                   </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        <script src="./bootstrap.bundle.min.js"></script>
+    </div>
+</body>
+</html>
