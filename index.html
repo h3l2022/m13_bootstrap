@@ -5,82 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>bootstrap - cards</title>
     <link rel="stylesheet" href="./bootstrap.min.css">
-    <style>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+ <style>
 
-        .container {
-            background-color: black;
-        }
 
-        .container h2 {
-            font-size: 48px;
-        }
-
-        .container h1 {
-            font-size: 65px;
-            color: white;
-            padding-left: 30px;
-            padding-bottom: 40px;
-            padding-top: 40px;
-        }
-
-        .loja {
-            display: grid;
-            grid-template-columns: 35.0% 35.0% 35.0%;
-        }
-
-        @media screen  and (max-width:767px) {
-            .container {
-            background-color: black;
-        }
-
-        .container h2 {
-            font-size: 48px;
-        }
-
-        .container h1 {
-            font-size: 65px;
-            color: white;
-            padding-left: 30px;
-            padding-bottom: 60px;
-            padding-top: 40px;
-        }
-
-        .loja {
-            display: block;
-            padding-left: 100px;
-            margin-top: 50px;
-        }
-
-        .loja img {
-            padding: 8px;
-        }
+.container {
+display: grid;
+grid-template-columns: 33.0% 33.0% 33.0%;
+padding-top: 8px;
     }
+ 
+ .theshape {  
+ padding: 35px;
+    background-color: black;
+    color: white;
+}
 
-
-    @media screen and (min-width: 768px) {
-    .loja {
-        display: grid;
-        grid-template-columns: 50.0% 50.0%;
-        padding-left: 130px;
-    }
-
-    }
-    </style>
+}
+ </style>
 </head>
 <body>
-    <div class="container">
         <div id="carousel-teste" class="carousel carousel-fade sline"  data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div data-bs-interval="3000" class="carousel-item active">
                     <img class="d-block w-100" src="https://32be822cfb.cbaul-cdnwnd.com/533af0b8772d6d44c11d6f5b521dd16e/200000000-8e80f8e811/will1.jpg?ph=32be822cfb"/>
                 <div class="carousel-caption">
-                    <h2>Motivação</h2>
+                    <h2>Força</h2>
                 </div>
                 </div>
                 <div data-bs-interval="3000" class="carousel-item">
                     <img class="d-block w-100" src="https://png.pngtree.com/background/20230618/original/pngtree-fitness-gym-s-3d-renderings-of-treadmills-or-running-machines-picture-image_3751253.jpg"/>
                     <div class="carousel-caption">
-                        <h2>Força</h2>
+                        <h2>Motivação</h2>
                     </div>
                 </div>
                 <div data-bs-interval="3000" class="carousel-item">
@@ -102,8 +58,10 @@
             <button type="button" data-bs-target="#carousel-teste" data-bs-slide-to="1"></button>
             <button type="button" data-bs-target="#carousel-teste" data-bs-slide-to="2"></button>
         </div>
+        <div class="theshape">
             <h1>TheShape.</h1>
-        <div class="loja">
+        </div>
+        <div class="container">
             <div class="row">
                 <div class="col-8">
                     <article class="card text-bg-dark">
@@ -158,9 +116,27 @@
                     </div>
                 </div>
             </div>
-        </div>
-       
-        <script src="./bootstrap.bundle.min.js"></script>
+            <div class="row">
+                <div class="col-8">
+                    <div class="card text-bg-dark">
+                        <div class="card-header">
+                            Linha Exclusiva!
+                        </div>
+                        <img src="https://d22ppqil6yck3o.cloudfront.net/Custom/Content/Products/11/46/11463_15855-pr-hormonal-60-caps-materia-prima-suplementos_z1_638192236438429460.jpg"/>
+                   <div class="card-body">
+                    <h4 class="card-title">Pré Hormonal</h4>
+                    <h5 class="card-subtitle">19,99$</h5>
+                    <p class="card-text">
+                        Os suplementos pré-hormonais são mais indicados para quem deseja aumentar a massa muscular magra. 
+                    </p>
+                    <a href="#" class="btn btn-primary">Compre</a>
+                   </div>
+                    </div>
+                </div>
+            </div>
     </div>
+        <script src="./bootstrap.bundle.min.js"></script>
+        </div>
+           
 </body>
 </html>
